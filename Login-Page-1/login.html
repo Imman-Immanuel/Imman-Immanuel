@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-box">
+        <form action="">
+          <h1 id="login-text">LOGIN</h1>
+          <div class="input-container" id="inputs">
+            <i class="bi bi-envelope"></i>
+            <input
+              class="input-field"
+              type="email"
+              name="email"
+              id="email-input"
+              autocomplete="off"
+              placeholder="Email"
+              required
+              minlength="8"
+              maxlength="30"
+            />
+          </div>
+          <div class="input-container">
+            <i class="bi bi-lock"></i>
+            <input
+              class="input-field"
+              type="password"
+              name="password"
+              id="password-input"
+              placeholder="Password"
+              required
+              minlength="8"
+              maxlength="30"
+            />
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" />
+            <p id="rem-text">Remember me</p>
+          </div>
+          <button id="login-button" onclick="validation()">LOGIN</button>
+          <div class="oauth-container">
+            <p id="or-text">Or login with</p>
+            <div class="icon-container">
+              <div class="fb-container">
+                <img id="fb-img" src="./assets/fb-png.png" alt="fb-img" />
+                <p id="fb-text">Facebook</p>
+              </div>
+              <div class="google-container">
+                <img
+                  id="google-img"
+                  src="./assets/google-png.png"
+                  alt="google-img"
+                />
+                <p id="google-text">Google</p>
+              </div>
+            </div>
+            <div class="oauths"></div>
+          </div>
+          <p id="not-text">
+            Not a member ? <a href="#" id="signup-text">Sign up now</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

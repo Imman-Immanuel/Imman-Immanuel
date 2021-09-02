@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@600&display=swap");
+
+body {
+  background: #c33764; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #1d2671,
+    #c33764
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #1d2671,
+    #c33764
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Sarabun", sans-serif;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  height: 500px;
+  width: 340px;
+  min-width: 300px;
+  border-radius: 5px;
+}
+#login-text {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.bi {
+  position: absolute;
+  top: 8px;
+  left: 45px;
+  color: rgb(165, 165, 165);
+  font-size: 18px;
+}
+
+.input-field {
+  width: 230px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(219, 219, 219);
+  padding-left: 40px;
+  margin-bottom: 15px;
+  outline: none;
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom: 30px;
+}
+#checkbox {
+  margin-left: 36px;
+  margin-top: 5px;
+}
+#rem-text {
+  margin-left: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: rgb(165, 165, 165);
+}
+#login-button {
+  border: none;
+  width: 270px;
+  background-color: #c33764;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+#login-button:focus {
+  box-shadow: 1px 1px 5px #c33764;
+}
+#or-text {
+  margin-top: 20px;
+  color: rgb(165, 165, 165);
+}
+.oauth-container {
+  margin-bottom: 50px;
+}
+#not-text {
+  color: rgb(165, 165, 165);
+}
+#signup-text {
+  color: rgb(165, 165, 165);
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.fb-container {
+  display: flex;
+  flex: row;
+  margin-left: 60px;
+}
+
+#fb-img {
+  height: 15px;
+  width: 15px;
+  margin-top: 2px;
+}
+#fb-text {
+  margin: 0;
+  margin-left: 5px;
+  color: rgb(17, 62, 146);
+  font-size: 14px;
+  cursor: pointer;
+}
+.google-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 60px;
+}
+#google-img {
+  height: 15px;
+  width: 15px;
+  margin-top: 2px;
+}
+#google-text {
+  margin: 0;
+  margin-left: 5px;
+  color: rgb(48, 48, 48);
+  font-size: 14px;
+  cursor: pointer;
+}
